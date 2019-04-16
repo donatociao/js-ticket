@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  background-image: url('https://architetturaadomicilio.it/wp-content/uploads/2013/04/binario-per-porte-finestre-scorrevoli-nf144.jpg');
+  background-size: cover;
+
+}
+
+#print {
+  width: auto;
+  height: 100px;
+  padding: 60px;
+  border: 10px solid white;
+  background-color: white;
+  filter: opacity(0.30);
+  margin: auto 0;
+}
+
+.train {
+  width: 1500px;
+  position: relative;
+  top: 80px;
+  right: 1500px;
+  animation: move 10s linear infinite;
+}
+
+@keyframes move {
+  0% {right: 1500px;}
+  10% {right: 1200px;}
+  20% {right: 900px;}
+  30% {right: 600px;}
+  40% {right: 300px;}
+  50% {right: 0px;}
+  60% {right: -300px;}
+  70% {right: -600px;}
+  80% {right: -900px;}
+  90% {right: -1200px;}
+  100% {right: -1500px;}
+}
